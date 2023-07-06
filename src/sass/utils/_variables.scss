@@ -1,0 +1,51 @@
+:root {
+  --primary-background:#121212;
+  --secondary-background:#1F1F1F;
+  --header-background:#161616;
+  --modal-background: #151515;
+  --primary-text-color:#FFFFFF;
+  --secondary-text-color:rgba(255, 255, 255, 0.5);
+  --filter-svg-color: rgba(255, 255, 255, 0.8);
+  --board-headers: #FFFFFF;
+  --btn-bg: #BEDBB0;
+  --btn-text-color: #121212;
+  --priority-without-priority: rgba(255, 255, 255, 0.3);
+  --btn-modal-icon-plus: #FFFFFF;
+  --btn-modal-bg: #161616;
+  --btn-modal-text-color: #FFFFFF;
+  --priority-low: #8FA1D0;
+  --priority-medium: #E09CB5;
+  --priority-high: #BEDBB0;
+  --select-header: rgba(255, 255, 255, 0.8);
+  --select-option: rgba(255, 255, 255, 0.5);
+  --select-list-bg: #151515;
+  --select-list-border: #BEDBB0;
+  --border-card: rgba(255, 255, 255, 0.1);
+  --background-input-modal: #1F1F1F;
+  --card-bg: #121212;
+  --board-add-column-btn: #FFFFFF;
+  --board-add-column-plus: #121212;
+  --header-modal-icon-plus: #161616;
+  --header-modal-btn-add-file: #BEDBB0;
+  --sidebar-board-active-bg: #1F1F1F;
+  --sidebar-help-wrapper-bg: #1F1F1F;
+  --sidebar-button-create-bg: #BEDBB0;
+  --sidebar-button-icon-plus: #121212;
+  --sidebar-board-item-hover: #404040;
+  --sidebar-text-color-main: #FFF;
+  --sidebar-text-color-secondary: rgba(255, 255, 255, 0.50);
+  --btn-hover-main: #a8cf96;
+  --btn-active-main: #8bbf73;
+  --btn-hover-secondary: #595959;
+  --btn-active-secondary: #333333;
+  --scroll-handler: rgba(255, 255, 255, 0.10);
+  --scroll-track: #161616;
+}
+
+$overlay-color: rgba(18, 20, 23, 0.4);
+$modal-bg: #151515;
+
+// добавил что бы не выбивало ошибку
+$white: #ffffff;
+$blue: blue;
+//

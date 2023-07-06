@@ -1,0 +1,67 @@
+@import '../../sass/utils/mixin';
+
+.header{
+    width: 100%;
+    padding: 18px 0px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-color: var(--header-background);
+    color: var(--primary-text-color);
+
+    @include tablet-max{
+        padding: 18px 20px;
+        min-width: 220px;
+    }
+
+    @include tablet {
+        padding: 18px 32px;
+    }
+
+    @include desktop {
+        padding: 18px 24px;
+        justify-content: flex-end;
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu{
+    width: 24px;
+    height: 24px;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    @include desktop {
+        display: none;
+    }
+}
+
+.icon{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    stroke: var(--primary-text-color);
+
+    &:first-child{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.modalContainer{
+    display: none;
+}

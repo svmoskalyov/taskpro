@@ -1,0 +1,202 @@
+@import '../../sass/utils/variables';
+
+.react-datepicker__input-container {
+  input {
+    font-family: 'Poppins';
+    width: 217px;
+    padding: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(21 / 14);
+    border: none;
+    outline: none;
+    color: var(--btn-bg);
+    background: var(--modal-background);
+    cursor: pointer;
+  }
+}
+
+.react-datepicker__tab-loop {
+  .react-datepicker__triangle {
+    display: none;
+  }
+
+  .react-datepicker-popper {
+    width: 233px;
+    padding: 0;
+  }
+
+  .react-datepicker__header {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    padding: 0;
+    padding-top: 18px;
+    background-color: var(--secondary-background);
+    color: #242424;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom: none;
+    margin-bottom: -1px;
+  }
+
+  .react-datepicker__day-names{
+    line-height: 1;
+    margin: 0;
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+    gap: 11px;
+  }
+  .react-datepicker__day-name{
+      margin: 0;
+      width: auto;
+      line-height: 1;
+      color: var(--primary-text-color);
+      font-size: 14px;
+      opacity: 0.5;
+  }
+  .react-datepicker__day{
+      margin: 0;
+      width: 21px;
+      height: 21px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: calc(18/14);
+      color: var(--primary-text-color);
+      font-size: 14px;
+      font-weight: 400;
+      &--disabled{
+        opacity: 0.2;
+      }
+      &--keyboard-selected{
+        background-color: transparent;
+      }
+      &--selected,
+      &:hover:not(&--disabled),
+      &:focus:not(&--disabled){
+        border-radius: 50%;
+        background-color: var(--btn-bg);
+        color: var(--btn-text-color);
+      }
+  }
+  .react-datepicker__current-month{
+    color: var(--primary-text-color);
+    font-weight: 500;
+    &::after{
+      content: "";
+      display: block;
+      width: 197px;
+      height: 1px;
+      background-color: var(--primary-text-color);
+      opacity: 0.2;
+      margin-top: 14px;
+      margin-left: 18px;
+    }
+  }
+
+  .react-datepicker__navigation {
+    top: 14px;
+
+    &-icon::before {
+      border-width: 2px 2px 0 0;
+      height: 7px;
+      width: 7px;
+      opacity: 0.8;
+      border-color: var(--primary-text-color);
+    }
+
+    &:hover .react-datepicker__navigation-icon::before,
+    &:focus .react-datepicker__navigation-icon::before {
+      opacity: 1;
+      border-color: var(--btn-bg);
+    }
+  }
+
+  .react-datepicker {
+    border-radius: 8px;
+    border: 1px solid var(--btn-bg);
+    width: 100%;
+  }
+
+  .react-datepicker__month-container {
+    width: 100%;
+  }
+
+  .react-datepicker__month {
+    margin: 0;
+    background-color: $white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    background-color: var(--secondary-background);
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  .react-datepicker__week{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .react-datepicker__month-wrapper {
+    display: flex;
+    gap: 4px;
+  }
+
+  .react-datepicker__month-text {
+    display: block;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    color: #242424;
+    border-radius: 50px;
+    padding: 6px 18px;
+    width: 60px;
+    background-color: $white;
+
+    margin: 0;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: $blue;
+    }
+  }
+
+  .react-datepicker__month--selected {
+    color: $white;
+    background-color: $blue;
+
+    &:hover,
+    &:focus {
+      background-color: $blue;
+    }
+  }
+
+  .react-datepicker__month--disabled {
+    color: $white;
+  }
+}
+.calendarWrap {
+  position: relative;
+  width: 217px;
+}
+
+.icon-calendar{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  stroke: var(--btn-bg);
+  cursor: pointer;
+  pointer-events: none;
+}
+
+

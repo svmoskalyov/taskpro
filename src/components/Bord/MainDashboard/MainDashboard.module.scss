@@ -1,0 +1,78 @@
+.mainDashboard {
+  display: flex;
+  align-items: flex-start;
+  @media screen and (max-width: 767px) {
+    margin-top: 39px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 26px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 10px;
+  }
+}
+
+.btnAddColumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 14px 0;
+  cursor: pointer;
+  width: 334px;
+  border: none;
+  border-radius: 8px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+
+  color: var(--primary-text-color);
+  background-color: var(--card-bg);
+
+  &:hover{
+    background-color: var(--btn-hover-secondary);
+    color: var(--btn-modal-bg);
+  }
+  &:active{
+    background-color: var(--btn-active-secondary)
+  }
+}
+
+.btnAddColumnW {
+  margin-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background-color: var(--board-add-column-btn);
+}
+
+.iconPlus {
+  stroke: var(--board-add-column-plus);
+}
+
+.column {
+  width: 334px;
+  height: 56px;
+  background-color: var(--primary-background);
+}
+
+.scroll {
+}
+
+body .os-theme-dark .os-scrollbar-handle {
+  background-color: red !important;
+  background: red !important;
+}
+
+
+
+
+

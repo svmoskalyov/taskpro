@@ -1,0 +1,73 @@
+@import '../../../../sass/utils/mixin';
+
+.textarea {
+  width: 100%;
+  height: 154px;
+  resize: none;
+
+  border-radius: 8px;
+  padding: 14px 18px;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+  opacity: 0.4;
+  border: 1px solid var(--btn-bg);
+  box-shadow: 0px 4px 16px rgba(22, 22, 22, 0.08);
+  color: var(--primary-text-color);
+  background-color: var(--select-list-bg);
+  &:focus,
+  &:hover {
+    opacity: 1;
+    outline: none;
+  }
+}
+
+.titleLabel {
+  margin-top: 24px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-bottom: 4px;
+
+  color: var(--secondary-text-color);
+}
+
+.titleDeadline {
+  margin-top: 14px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-bottom: 4px;
+
+  color: var(--secondary-text-color);
+}
+
+.datePickerContainer {
+  margin-bottom: 40px;
+}
+
+.secClassName {
+  margin-bottom: 14px;
+}
+
+
+.priorityValue {
+  display: flex;
+  align-items: center;
+}
+
+.priorityName {
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--secondary-text-color);
+}
+
+.errorMessageTitle {
+  bottom: -28px;
+}

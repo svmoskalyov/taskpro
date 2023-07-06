@@ -1,0 +1,53 @@
+.columnScroll {
+    overflow: unset;
+    position: static;
+  .os-scrollbar-horizontal{
+    bottom: -30px;
+    @media screen and (min-width: 768px) {
+      bottom: -15px;
+    }
+    @media screen and (min-width: 1280px) {
+      bottom: 0px;
+    }
+  }
+  .os-scrollbar-track {
+    height: 12px;
+    background: var(--scroll-track) ;
+  }
+  .os-scrollbar-handle {
+    background: var(--scroll-handler);
+    &:hover{
+        background: var(--btn-bg);
+    }
+  }
+}
+
+.cardScroll{
+    overflow: unset;
+    .os-scrollbar-vertical{
+        right: -15px;
+    }
+    .os-scrollbar-track {
+        height: 100%;
+        background: var(--scroll-track) ;
+    }
+}
+
+.boardScroll{
+    overflow: unset;
+    .os-scrollbar-vertical{
+        right: -4px;
+    }
+    .os-scrollbar-track {
+        width: 4px;
+        height: 100%;
+        background: var(--scroll-track) ;
+    }
+    .os-scrollbar-handle {
+      width: 4px;
+      background: var(--scroll-handler);
+      &:hover{
+          background: var(--btn-bg);
+      }
+    }
+}

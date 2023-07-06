@@ -1,0 +1,23 @@
+.dashboardFilter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  border: none;
+  font-family: inherit;
+
+  color: var(--primary-text-color);
+  opacity: 0.8;
+  background-color: transparent;
+}
+
+.iconFilter {
+  margin-right: 9px;
+  stroke: var(--primary-text-color);
+  opacity: 0.8;
+}

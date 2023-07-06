@@ -1,0 +1,128 @@
+@import "../../sass/utils/mixin";
+@import "../../sass/utils/variables";
+@import "../../assets/fonts/poppinsFontStyle.css";
+
+.backfield {
+  background-image: linear-gradient(
+    rgba(196, 196, 196, 1),
+    rgba(190, 219, 176, 1)
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;   
+  height: 100vh; 
+}
+
+.picture {  
+  background-image: url('../CommonWelcomField/themeimaige.png');
+  background-size: contain;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 14px;
+  width: 124px;
+  height: 124px;
+  
+  @include tablet {
+    width: 162px;
+    height: 162px;
+  }
+
+  }
+
+.pageinfowrapper {
+  flex-direction: column;
+  align-items: center;
+  max-width: 335px;
+  padding-left: 20px;
+  padding-right: 20px;
+  @include tablet {
+    max-width: 473px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3em;
+    text-align: center;
+    margin-bottom: 48px;
+    color: var(--header-background);
+  }  
+}
+
+.brandwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+ p {
+  font-weight: 600;
+    font-size: 28px;
+    line-height: 2.3em;
+  margin-bottom: 0;
+  @include tablet {
+    font-size: 40px;
+    line-height: 1.5em;
+  }
+ }
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  fill: #FFFFFF;
+  background-color: #161616;
+  border-radius: 8px;
+  @include tablet {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.registationbutton {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: var(--header-background);
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-radius: 8px;
+  max-width: 100%;
+  transition: background-color 250ms linear, color 250ms linear;
+  @include tablet {
+    max-width: 344px;
+  }
+  &:hover {
+    background-color: var(--filter-svg-color);
+    color: var(--header-background);
+  }
+}
+
+.loginbutton {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: inherit;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: var(--header-background);
+  border-radius: 8px;
+  width: 100%;
+  transition: background-color 250ms linear;
+  @include tablet {
+    width: 344px;
+  }
+  &:hover {
+    background-color: var(--filter-svg-color);
+  }
+}

@@ -1,0 +1,238 @@
+.container {
+  width: 225px;
+  padding-top: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+
+  @media screen and (min-width: 768px) {
+    width: 260px;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.sectionTop {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 70px;
+}
+
+.logoText {
+  color: var(--sidebar-text-color-main);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.64px;
+}
+
+.boardsTitle {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--sidebar-text-color-secondary);
+}
+
+.createBoard {
+  height: 70px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border-card);
+  border-bottom: 1px solid var(--border-card);
+}
+
+.createBoard > p {
+  width: 76px;
+  color: var(--sidebar-text-color-main);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.28px;
+}
+
+.buttonCreate {
+  width: 40px;
+  height: 36px;
+  border-radius: 6px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sidebar-button-create-bg);
+  stroke: var(--sidebar-button-icon-plus);
+
+  &:hover {
+    background-color: var(--btn-hover-main);
+  }
+
+  &:active {
+    background-color: var(--btn-active-main);
+  }
+}
+
+.sectionBoards {
+  width: 225px;
+  height: calc(100vh - 592px);
+  min-height: 60px;
+  margin-top: 40px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  @media screen and (min-width: 768px) {
+    width: 260px;
+    height: calc(100vh - 645px);
+  }
+}
+
+.boardsList {
+  list-style-type: none;
+  max-height: 180px;
+}
+
+.boardItem {
+  width: 100%;
+  height: 60px;
+  padding-left: 14px;
+  padding-right: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--sidebar-board-item-hover);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.boardItem p,
+.boardItem svg {
+  color: var(--sidebar-text-color-secondary);
+  stroke-opacity: 0.5;
+}
+
+.boardItemActive {
+  composes: boardItem;
+  background-color: var(--sidebar-board-active-bg);
+  padding-right: 14px;
+  position: relative;
+  &::after{
+    content: "";
+    height: calc(100% - 2px);
+    top: 1px;
+    right: 0;
+    position: absolute;
+    width: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: var(--btn-bg);
+  }
+}
+
+.boardItemActive p,
+.boardItemActive svg {
+  color: var(--sidebar-text-color-main);
+  // stroke: var(--sidebar-text-color-main);
+  stroke-opacity: 1;
+}
+
+.boardName {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 8px;
+  overflow: hidden;
+}
+
+.boardName > p {
+  width: 100%;
+  overflow: hidden;
+  // color: var(--primary-text-color);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.28px;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.boardEditIcons {
+  display: flex;
+  gap: 8px;
+}
+
+.helpWrapper {
+  padding: 14px;
+  margin-bottom: 24px;
+  background-color: var(--sidebar-help-wrapper-bg);
+  border-radius: 8px;
+  @media screen and (min-width: 768px) {
+    padding: 20px;
+  }
+}
+
+.helpSend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--sidebar-text-color-main);
+  stroke: var(--sidebar-text-color-main);
+  border: none;
+  background-color: transparent;
+  font-family: "Poppins";
+}
+
+.helpText {
+  margin-top: 14px;
+  margin-bottom: 18px;
+  color: var(--sidebar-text-color-main);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.33;
+  letter-spacing: -0.24px;
+
+  & > span {
+    color: var(--select-list-border);
+  }
+
+  &.violet > span {
+    color: var(--primary-background);
+  }
+}
+
+.btnLogout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--sidebar-text-color-main);
+  stroke: var(--select-list-border);
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  &.violet {
+    stroke: var(--btn-text-color);
+  }
+}
+
+.icons {
+  stroke: #fff;
+  display: flex;
+}

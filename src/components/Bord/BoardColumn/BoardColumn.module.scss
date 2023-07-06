@@ -1,0 +1,40 @@
+.columnList {
+  display: flex;
+}
+.columnItem{
+  margin-right: 34px;
+}
+.titleToDo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  height: 56px;
+  padding: 14px 20px;
+
+  border-radius: 8px;
+  background-color: var(--card-bg);
+
+  &:last-child {
+    margin-right: 34px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 334px;
+  }
+}
+
+.titleCard {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.iconToDo {
+  display: flex;
+  gap: 8px;
+}
