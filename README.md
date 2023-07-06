@@ -6,7 +6,7 @@ Under this application, we wrote our backend (API) to handle various operations.
 
 
 ## 🛠 Technologies stack
-
+HTML, JavaScript, SCSS, React, Redux, GitHub and librarys (axios, formik, yup, etc.)
 
 
 ## 🔗 Links
